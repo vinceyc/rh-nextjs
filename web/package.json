@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "sanity-nextjs-landing-pages-web",
+  "name": "rh-nextjs-web",
   "version": "1.0.12",
-  "author": "Sanity <hello@sanity.io>",
+  "author": "Vincent <vince.ys.chan@gmail.com>",
   "scripts": {
     "dev": "next",
     "build": "next build && next export && node exportSitemap.js",
@@ -11,17 +11,21 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/react": "^1.7.4",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^2.1.0",
     "@sanity/image-url": "^0.140.19",
     "@zeit/next-css": "^1.0.1",
+    "framer-motion": "4.1.17",
     "groq": "^0.140.0",
     "lodash": "^4.17.11",
     "next": "^8.1.0",
     "next-seo": "^1.11.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-inlinesvg": "^0.8.4",
+    "react-inlinesvg": "^2.3.0",
     "react-mailchimp-form": "^1.0.1",
     "react-mailchimp-subscribe": "^2.1.0"
   },

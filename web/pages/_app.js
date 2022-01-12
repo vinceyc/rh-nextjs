@@ -1,6 +1,10 @@
 import React from 'react'
 import BaseApp from 'next/app'
+import { ChakraProvider } from '@chakra-ui/react'
+import { extendTheme } from '@chakra-ui/react'
+
 import client from '../client'
+
 // import 'normalize.css'
 import '../styles/shared.module.css'
 import '../styles/layout.css'
@@ -19,6 +23,17 @@ const siteConfigQuery = `
     }
   }[0]
   `
+
+// Chakra UI Theming
+const colors = {
+  brand: {
+    900: '#1a365d',
+    800: '#153e75',
+    700: '#2a69ac'
+  }
+}
+
+const theme = extendTheme({ colors })
 
 class App extends BaseApp {
   static async getInitialProps ({Component, ctx}) {
@@ -44,7 +59,9 @@ class App extends BaseApp {
   render () {
     const {Component, pageProps} = this.props
     return (
-      <Component {...pageProps} />
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
     )
   }
 }
