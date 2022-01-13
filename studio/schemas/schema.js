@@ -24,6 +24,7 @@ import imageSection from './objects/imageSection';
 import mailchimp from './objects/mailchimp';
 import textSection from './objects/textSection';
 import userWithDetails from './objects/userWithDetails';
+import heroSimpleCentered from './objects/hero/simpleCentered';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -46,5 +47,6 @@ export default createSchema({
     siteConfig,
     textSection,
     userWithDetails,
+    heroSimpleCentered
   ]),
 });
