@@ -6,6 +6,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // Document types
 import page from './documents/page';
+import article from './documents/article';
 import route from './documents/route';
 import siteConfig from './documents/siteConfig';
 
@@ -47,6 +48,7 @@ export default createSchema({
     siteConfig,
     textSection,
     userWithDetails,
-    heroSimpleCentered
+    heroSimpleCentered,
+    article
   ]),
 });
