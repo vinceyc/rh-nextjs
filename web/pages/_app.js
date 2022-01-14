@@ -10,16 +10,16 @@ import '../styles/shared.module.css'
 import '../styles/layout.css'
 
 const siteConfigQuery = `
-  *[_id == "global-config"] {
+  *[_id == 'global-config'] {
     ...,
     logo {asset->{extension, url}},
     mainNavigation[] -> {
       ...,
-      "title": page->title
+      'title': page->title
     },
     footerNavigation[] -> {
       ...,
-      "title": page->title
+      'title': page->title
     }
   }[0]
   `
@@ -27,9 +27,16 @@ const siteConfigQuery = `
 // Chakra UI Theming
 const colors = {
   brand: {
-    900: '#1a365d',
-    800: '#153e75',
-    700: '#2a69ac'
+    '50': '#E9F7FB',
+    '100': '#C1E9F5',
+    '200': '#9ADBEF',
+    '300': '#72CCE8',
+    '400': '#4BBEE2',
+    '500': '#23B0DC',
+    '600': '#1C8DB0',
+    '700': '#156A84',
+    '800': '#0E4658',
+    '900': '#07232C'
   }
 }
 
