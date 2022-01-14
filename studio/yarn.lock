@@ -1670,6 +1670,11 @@
     "rxjs" "^6.5.3"
     "shallow-equals" "^1.0.0"
 
+"@sanity/production-preview@^2.15.0":
+  "integrity" "sha512-qwhxogxfXeKmWLf4gqh0XEhLD+zEzX3YYHunJqVnT0K1SvRgSQce81zF7Zau8mZI1vPuNaUO+g+DzHs3p/wYTg=="
+  "resolved" "https://registry.npmjs.org/@sanity/production-preview/-/production-preview-2.15.0.tgz"
+  "version" "2.15.0"
+
 "@sanity/react-hooks@2.1.0":
   "integrity" "sha512-Hns7UyTE1X31ojeeAW5+x7DDM/U9B9idhAB2ctxUv26kA3MZFj35Pk/JTPlH7RfswSDVoQ9uUcjzLdUkepXdkg=="
   "resolved" "https://registry.npmjs.org/@sanity/react-hooks/-/react-hooks-2.1.0.tgz"

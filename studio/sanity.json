@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "Next.js landing pages"
+    "name": "RH Next.js"
   },
   "api": {
     "projectId": "jt3mym15",
@@ -14,6 +14,7 @@
     "@sanity/default-login",
     "@sanity/dashboard",
     "@sanity/desk-tool",
+    "@sanity/production-preview",
     "dashboard-widget-structure-menu",
     "dashboard-widget-document-list",
     "dashboard-widget-netlify"
@@ -30,6 +31,10 @@
     {
       "implements": "part:@sanity/dashboard/config",
       "path": "./dashboardConfig.js"
+    },
+    {
+      "implements": "part:@sanity/production-preview/resolve-production-url",
+      "path": "./resolveProductionUrl.js"
     }
   ]
 }
