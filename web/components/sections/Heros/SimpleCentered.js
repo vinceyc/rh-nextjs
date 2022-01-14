@@ -8,7 +8,6 @@ import {
   Box,
   useColorModeValue,
   Flex,
-  Button,
   HStack
 } from '@chakra-ui/react'
 
