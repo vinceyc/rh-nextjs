@@ -2,6 +2,7 @@
 
 import React from 'react'
 import {groq} from 'next-sanity'
+import Link from 'next/link'
 
 import {usePreviewSubscription} from '../lib/sanity'
 import {getClient} from '../lib/sanity.server'
@@ -100,6 +101,7 @@ export default function Page({data, preview}) {
   // It'll be completely blank when they start!
   return (
     <div style={{maxWidth: `20rem`, padding: `1rem`}}>
+      {preview && <Link href='/api/exit-preview'>Preview Mode Activated!</Link>}
       {page?.title && <h1>{page.title}</h1>}
       {page?.content && <p>{page.content}</p>}
     </div>
